@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
+
+/* ===== Estilos generales ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Lexend', Arial, sans-serif;
+    background-color:#0060c0;
+    padding-top:100px;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+input{
+    font-family:inherit;
+}
+
+
+/* ===== Encabezado ===== */
+#encabezado{
+    background-color:#0051a2;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100px;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    padding:0 30px 0 18px;
+}
+#logo{
+    width:330px;
+    color:white;
+    font-size:40px;
+    font-weight:500;
+}
+#logo svg{
+    width:45px;
+    height:45px;
+    margin-left:5px;
+    vertical-align:middle;
+}
+#buscador{
+    width:616px;
+    height:64px;
+    background-color:white;
+    border:2px solid black;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    padding:0 15px;
+    margin-left:235px;
+}
+#buscador svg{
+    width:30px;
+    height:30px;
+    margin-right:25px;
+    flex-shrink:0;
+}
+#buscador input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:22px;
+}
+#avatar{
+    width:76px;
+    height:76px;
+    border-radius:50%;
+    background-color:white;
+    overflow:hidden;
+    margin-left:20px;
+}
+#avatar svg{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+
+/* ===== Menu lateral ===== */
+#menuPrincipal{
+    background-color:#0051a2;
+    position:fixed;
+    top:100px;
+    bottom:0px;
+    left:0px;
+    width:250px;
+    padding-top:45px;
+    z-index:1;
+}
+.opcionMenuPrincipal{
+    display:block;
+    color:white;
+    font-size:24px;
+    font-weight:500;
+    padding:20px 20px;
+}
+.opcionMenuPrincipal:hover{
+    background-color:rgba(255,255,255,0.15);
+}
+.opcionMenuPrincipal svg{
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+    margin-right:15px;
+}
+.activa{
+    color:#1ad1ff;
+    margin:0 15px 10px 15px;
+    padding:15px 5px;
+    border-bottom:3px solid #1ad1ff;
+}
+
+
+/* ===== Contenido ===== */
+.contenido{
+    min-height:calc(100vh - 100px);
+    margin-left:250px;
+    padding:15px 34px 30px 25px;
+    background-color:#dfe7fa;
+}
+.bloque{
+    margin-bottom:30px;
+}
+h2{
+    font-size:30px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+.tarjeta{
+    background-color:white;
+    border:2px solid #bbbbbb;
+    border-radius:12px;
+    padding:18px 22px;
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+h3{
+    font-size:22px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+.nota{
+    font-size:16px;
+    color:#777777;
+    margin-top:5px;
+}
+.opcionAjuste{
+    display:block;
+    padding:12px 0px;
+    font-size:20px;
+}
+.opcionAjuste:hover{
+    background-color:#dfe7fa;
+}
+
+
+/* ===== Tema ===== */
+.filaTema{
+    margin-top:18px;
+    overflow:hidden;
+}
+.filaTema label{
+    float:left;
+    padding-top:10px;
+    font-size:20px;
+}
+.filaTema input[type="radio"]{
+    width:22px;
+    height:22px;
+    margin-right:10px;
+    vertical-align:middle;
+}
+.filaTema input[type="button"]{
+    float:right;
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    background-color:#6ec6ff;
+    font-size:20px;
+    font-weight:500;
+    cursor:pointer;
+}
+.filaTema input[type="button"]:hover{
+    background-color:#4fb6f5;
+}
+
+
+/* ===== Interruptores ===== */
+.interruptor{
+    display:block;
+    padding:10px 0px;
+    font-size:20px;
+    cursor:pointer;
+}
+.interruptor input{
+    -webkit-appearance:none;
+    appearance:none;
+    display:inline-block;
+    vertical-align:middle;
+    width:56px;
+    height:32px;
+    margin-right:15px;
+    border-radius:16px;
+    background-color:#bbbbbb;
+    background-image:radial-gradient(circle, #fff 11px, transparent 12px);
+    background-size:24px 24px;
+    background-repeat:no-repeat;
+    background-position:4px center;
+    cursor:pointer;
+}
+.interruptor input:checked{
+    background-color:#0060c0;
+    background-position:28px center;
+}

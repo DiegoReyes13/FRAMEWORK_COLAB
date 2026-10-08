@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estiloJP.css">
+    <title>Ajustes - Apunta</title>
+</head>
+<body>
+
+
+    <header id="encabezado">
+        <a id="logo" href="index.html">Apunta <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19z"/>
+                <path d="M14.5 6.5l3 3"/>
+            </svg></a>
+
+        <form id="buscador" action="#">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <circle cx="11" cy="11" r="7"/>
+                <path d="M20 20l-4-4"/>
+            </svg>
+            <input type="search" name="busqueda" placeholder="Buscar tema, materia, profesor">
+        </form>
+
+        <a id="avatar" href="perfil.html">
+            <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="24" fill="#f4f1ea"/>
+                <path d="M9 21c0-9 6.5-15 15-15s15 6 15 15c-4-3-9-4.5-15-4.5S13 18 9 21z" fill="#1b1b1b"/>
+                <rect x="11" y="20" width="12" height="8" rx="3" fill="#1b1b1b"/>
+                <rect x="25" y="20" width="12" height="8" rx="3" fill="#1b1b1b"/>
+                <path d="M18 35c3.5 2.5 8.5 2.5 12 0" fill="none" stroke="#1b1b1b" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </a>
+    </header>
+
+
+    <nav id="menuPrincipal">
+        <a class="opcionMenuPrincipal" href="index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 11l9-8 9 8"/>
+                <path d="M5 9.5V20h5v-6h4v6h5V9.5"/>
+            </svg>
+            Inicio
+        </a>
+        <a class="opcionMenuPrincipal activa" href="ajustes.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="6.6" stroke-width="3.4"/>
+                <circle cx="12" cy="12" r="9.3" stroke-width="3" stroke-dasharray="3.6 3.63"/>
+            </svg>
+            Ajustes
+        </a>
+        <a class="opcionMenuPrincipal" href="perfil.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="10" r="3"/>
+                <path d="M6.2 18.6c1.2-2.4 3.4-3.6 5.8-3.6s4.6 1.2 5.8 3.6"/>
+            </svg>
+            Perfil
+        </a>
+        <a class="opcionMenuPrincipal" href="subir.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 18h-.5a4.5 4.5 0 0 1-.4-9A6 6 0 0 1 17.7 8 4.5 4.5 0 0 1 17.5 18H17"/>
+                <path d="M12 12v8"/>
+                <path d="M9 14.5l3-3 3 3"/>
+            </svg>
+            Subir
+        </a>
+        <a class="opcionMenuPrincipal" href="minijuegos.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="11" rx="5"/>
+                <path d="M7 10.5v4M5 12.5h4"/>
+                <circle cx="15.5" cy="11.5" r=".9" fill="currentColor"/>
+                <circle cx="18" cy="13.7" r=".9" fill="currentColor"/>
+            </svg>
+            Minijuegos
+        </a>
+    </nav>
+
+    <section id="ajustes" class="contenido">
+        <form action="#" name="formularioAjustes">
+
+
+            <div class="bloque">
+                <h2>Ajustes generales</h2>
+                <div class="tarjeta">
+                    <h3>Formatos regionales y de idioma</h3>
+                    <a class="opcionAjuste" href="#">Idioma de la aplicación</a>
+                    <a class="opcionAjuste" href="#">Formato de fecha</a>
+                    <a class="opcionAjuste" href="#">Formato de hora</a>
+                </div>
+            </div>
+
+
+            <div class="bloque">
+                <h2>Apariencia</h2>
+                <div class="tarjeta">
+                    <h3>Tema</h3>
+                    <p class="nota">Esto se aplicará a toda la página de Apunta</p>
+                    <div class="filaTema">
+                        <label><input type="radio" name="tema">Modo oscuro</label>
+                        <input type="button" value="Seguir el tema del sistema operativo">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bloque">
+                <h2>Notificaciones y actividades</h2>
+                <div class="tarjeta">
+                    <label class="interruptor"><input type="checkbox" name="notifMinijuegos" checked>Notificaciones de nuevos minijuegos</label>
+                    <label class="interruptor"><input type="checkbox" name="notifApuntes" checked>Notificaciones de nuevos apuntes</label>
+                    <label class="interruptor"><input type="checkbox" name="notifRespuestas" checked>Notificaciones de respuestas a tus publicaciones</label>
+                    <label class="interruptor"><input type="checkbox" name="notifSemanal" checked>Recordatorios de actividad semanal</label>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <footer></footer>
+
+</body>
+</html>

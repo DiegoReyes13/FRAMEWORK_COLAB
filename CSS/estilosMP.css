@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend', Arial, sans-serif;
+}
+
+body {
+  background-color: #0060c0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.icono-texto {
+  font-size: 30px;
+  line-height: 1;
+}
+
+
+/* ===== Encabezado ===== */
+.barra-superior {
+  background-color: #0051a2;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 18px;
+  color: #ffffff;
+}
+
+.logotipo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 330px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.logotipo .icono-texto {
+  font-size: 40px;
+}
+
+.barra-busqueda {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 12px;
+  width: 616px;
+  height: 64px;
+  margin-left: 235px;
+  gap: 25px;
+}
+
+.barra-busqueda input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 22px;
+}
+
+.avatar-usuario {
+  background: #ffffff;
+  border: none;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.avatar-usuario .icono-texto {
+  font-size: 38px;
+}
+
+
+/* ===== Estructura ===== */
+.contenedor-principal {
+  display: flex;
+  flex: 1;
+}
+
+
+/* ===== Menu lateral ===== */
+.menu-lateral {
+  width: 250px;
+  background-color: #0051a2;
+  padding-top: 45px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+}
+
+.menu-lateral a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.menu-lateral a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-lateral li.activo {
+  margin: 0 15px 10px 15px;
+  border-bottom: 3px solid #1ad1ff;
+}
+
+.menu-lateral li.activo a {
+  color: #1ad1ff;
+  padding: 15px 5px;
+}
+
+
+/* ===== Contenido principal ===== */
+.contenido-principal {
+  flex: 1;
+  padding: 15px 34px 30px 25px;
+  background-color: #dfe7fa;
+}
+
+.tarjeta-perfil {
+  background-color: #ffffff;
+  border: 2px solid #bbbbbb;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  padding: 25px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-perfil h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.campo-formulario {
+  margin-bottom: 22px;
+}
+
+.campo-formulario label {
+  display: block;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.campo-formulario input {
+  width: 100%;
+  height: 56px;
+  padding: 0 18px;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  font-size: 20px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.fila-contrasena {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.fila-contrasena input {
+  width: 320px;
+  letter-spacing: 3px;
+}
+
+.boton-cambiar {
+  background-color: #6ec6ff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.2s;
+}
+
+.boton-cambiar:hover {
+  background-color: #4fb6f5;
+}
+
+.entrada-corta {
+  width: 320px;
+}
+
+
+/* ===== Panel derecho ===== */
+.panel-derecho {
+  width: 340px;
+  background-color: #c1d3f5;
+  padding: 15px 15px 20px 15px;
+}
+
+.tarjeta-accion {
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 12px;
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.tarjeta-accion h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.caja-icono {
+  background-color: #4e91ef;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono-candado {
+  font-size: 46px;
+}
+
+.enlace-accion {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.enlace-accion:hover {
+  text-decoration: underline;
+}

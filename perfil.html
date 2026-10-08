@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apunta - Perfil</title>
+  <link rel="stylesheet" href="./CSS/estilosMP.css">
+</head>
+<body>
+
+  <header class="barra-superior">
+    <div class="logotipo">
+      <span>Apunta</span>
+      <span class="icono-texto" aria-hidden="true">✏️</span>
+    </div>
+    
+    <form class="barra-busqueda" role="search">
+      <span class="icono-texto" aria-hidden="true">🔍</span>
+      <input type="search" placeholder="Buscar tema, materia, profesor" aria-label="Buscar tema, materia, profesor">
+    </form>
+
+    <button type="button" class="avatar-usuario" aria-label="Perfil del usuario">
+      <span class="icono-texto" aria-hidden="true">👤</span>
+    </button>
+  </header>
+
+  <div class="contenedor-principal">
+
+    <nav class="menu-lateral" aria-label="Navegación principal">
+      <ul>
+        <li>
+          <a href="./index.html">
+            <span class="icono-texto" aria-hidden="true">🏠</span>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="./ajustes.html">
+            <span class="icono-texto" aria-hidden="true">⚙️</span>
+            <span>Ajustes</span>
+          </a>
+        </li>
+        <li class="activo">
+          <a href="./perfil.html" aria-current="page">
+            <span class="icono-texto" aria-hidden="true">👤</span>
+            <span>Perfil</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icono-texto" aria-hidden="true">☁️</span>
+            <span>Subir</span>
+          </a>
+        </li>
+        <li>
+          <a href="./minijuegos.html">
+            <span class="icono-texto" aria-hidden="true">🎮</span>
+            <span>Minijuegos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="contenido-principal">
+      <article class="tarjeta-perfil">
+        <h2>Perfil</h2>
+
+        <form>
+          <div class="campo-formulario">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" value="Juan Pablo Macias Muños" readonly>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="correo">Correo institucional</label>
+            <input type="email" id="correo" value="Jeipicorreo@alumnos.utleon.edu.mx" readonly>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="carrera">Carrera</label>
+            <input type="text" id="carrera" value="Tecnologias de la información - Desarrollo de software" readonly>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="contrasena">Contraseña</label>
+            <div class="fila-contrasena">
+              <input type="password" id="contrasena" value="12345678910" readonly>
+              <button type="button" class="boton-cambiar">Cambiar</button>
+            </div>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="verificacion">Verificación en dos pasos</label>
+            <input type="text" id="verificacion" value="+52 477 **********" class="entrada-corta" readonly>
+          </div>
+        </form>
+      </article>
+    </main>
+
+    <aside class="panel-derecho" aria-label="Acciones de la cuenta">
+      <section class="tarjeta-accion">
+        <h3>Cambiar contraseña</h3>
+        
+        <div class="caja-icono">
+          <span class="icono-candado" aria-hidden="true">🔒</span>
+        </div>
+
+        <a href="#" class="enlace-accion">Ir a cambio</a>
+      </section>
+    </aside>
+
+  </div>
+
+</body>
+</html>

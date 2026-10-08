@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apunta | Iniciar sesión</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/estilosC.css" />
+  </head>
+  <body>
+    <main class="login">
+      <!-- Panel izquierdo: frase del día -->
+      <section class="quote-panel">
+        <h2 class="quote-panel__title">Frase del dia</h2>
+        <blockquote class="quote-panel__quote">
+          “Aquel que tiene un porqué para vivir, puede soportar casi cualquier
+          cómo.”
+        </blockquote>
+        <p class="quote-panel__author">-Friedrich Nietzsche</p>
+      </section>
+
+      <!-- Panel derecho: formulario -->
+      <section class="form-panel">
+        <header class="form-panel__header">
+          <h1 class="logo">
+            Apunta
+            <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 21l1.5-5.5L16 4l4 4L8.5 19.5 3 21z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path d="M14 6l4 4" stroke="currentColor" stroke-width="1.8" />
+            </svg>
+          </h1>
+        </header>
+
+        <div class="form-panel__body">
+          <h2 class="welcome">¡Bienvenido a Apunta, alumno!</h2>
+          <p class="welcome__hint">¡No dependas de la ia!</p>
+
+          <!-- Quitamos action="#" y method="post" ya que no se enviarán datos al servidor -->
+          <div class="form">
+            <label class="form__label">Correo Institucional</label>
+            <input
+              class="form__input"
+              placeholder="correo@universidad.edu.mx"
+            />
+
+            <label class="form__label">Contraseña</label>
+            <input class="form__input" type="password" />
+
+            <!-- Cambiamos <button> por <a> para que navegue directo a index.html -->
+            <a href="./index.html" class="form__button">Iniciar sesión</a>
+
+            <a class="form__link" href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
